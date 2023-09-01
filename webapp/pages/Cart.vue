@@ -14,7 +14,9 @@
 </template>
 
 <script setup>
-import Cart from '~/components/cart'
-import MainLayout from '~/layouts/MainLayout.vue'
-import CartSummary from '~/components/cart/summary.vue'
+import Cart from "~/components/cart";
+import MainLayout from "~/layouts/MainLayout.vue";
+import CartSummary from "~/components/cart/summary.vue";
+const { searchBarState, toggleSearchBarState } = useSearchBarState();
+if (searchBarState === true) toggleSearchBarState();
 </script>
